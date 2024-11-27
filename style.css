@@ -367,7 +367,7 @@ margin-right: auto;
     
     
 }
-.toggle-buttons .active {
+.toggle-buttons .actives {
     background-color: #ffb717;
     padding: 10px 20px;
     border-radius: 5px;
@@ -1516,8 +1516,60 @@ border-radius:7px;
 
 
 
-    @media only screen and (max-width: 1650px) {
-    
+    @media only screen and (max-width: 1600px) {
+        .about-main {
+            width: 100%;
+            min-height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+        
+        }
+        .benefit-service {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 10rem;
+            display: flex;
+            font-family: "Zilla Slab";
+        
+            align-items: center;
+        }
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 73%;
+            margin: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .gallery-container {
+            max-width: 70%;
+            margin: 20px auto;
+            padding: 10px;
+        background-color: white;
+        }
+        .modal-content {
+            position: relative;
+            margin: auto;
+            top: 7%;
+            width:55%;
+            padding: 2rem;
+            min-height: 22rem;
+            background: rgb(255, 255, 255);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        .modal-images img {
+            max-width: 100%; /* Ensures images do not overflow their container */
+            height: 18rem; /* Maintains aspect ratio */
+            border-radius: 5px;
+            object-fit: cover;
+        
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
          
       }
 

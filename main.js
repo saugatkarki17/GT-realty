@@ -17,18 +17,22 @@ function showCategory(category) {
     
     allProjects.forEach(project => {
         project.classList.remove('active');
-        if (project.classList.contains(category)) {
+        if (category === 'all' || project.classList.contains(category)) {
             project.classList.add('active');
         }
     });
 
     allButtons.forEach(button => {
-        button.classList.remove('active');
-        if (button.innerText.toLowerCase() === category) {
-            button.classList.add('active');
-        }
+        button.classList.remove('actives'); 
     });
+
+    const activeButton = Array.from(allButtons).find(button => button.textContent.trim().toLowerCase() === category);
+    if (activeButton) {
+        activeButton.classList.add('actives');
+    }
 }
+
+
 
 function showModal(projectId) {
     const modal = document.getElementById('modal');
