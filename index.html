@@ -35,11 +35,11 @@
         <nav>
             <div class="logo-div"></div>
             <ul class="nav-links">
-                <li><a href="">Home</a></li>
-                <li><a href="#scroll-project" >Projects</a></li>
-                <li><a href="">Reviews</a></li>
-                <li><a href="">About Us</a></li>
-                <a href="" class="btn-nav-1">Contact</a>
+                <li ><a  href="index.html">Home</a></li>
+                <li class="linkmenu"><a href="#scroll-project" >Projects</a></li>
+                <li class="linkmenuO"><a  href="#scroll-review">Reviews</a></li>
+                <li ><a  href="">About Us</a></li>
+                <a href="#scroll-contact" class="btn-nav-1 linkmenuT">Contact</a>
 
             </ul>
             <div class="ham-menu">
@@ -48,7 +48,7 @@
                 <div class="line-3"></div>
             </div>
 
-            <a href="" class="btn-nav">Contact</a>
+            <a href="#scroll-contact" class="btn-nav">Contact</a>
 
             
         </nav>
@@ -168,8 +168,8 @@
 
         <div class="gallery-container" id="scroll-project">
             <div class="toggle-buttons">
-                <button class="actives" onclick="showCategory('all')">All</button>
-                <button onclick="showCategory('residential')">Exterior</button>
+                <button class="active" onclick="showCategory('all')">All</button>
+                <button  onclick="showCategory('residential')">Exterior</button>
                 <button onclick="showCategory('commercial')">Interior</button>
             </div>
             <div class="projects all residential">
@@ -204,7 +204,7 @@
         </div>
 
         <div id="modal" class="modal">
-            <div class="modal-content">
+            <div class="modal-content" id="model-content">
                 <span class="close" onclick="closeModal()">&times;</span>
                 <div id="modal-body">
                     <!-- Modal content will be injected here -->
@@ -216,7 +216,7 @@
 
 
         <!-- review -->
-         <div class="main-test">
+         <div class="main-test" id="scroll-review">
             <div class="testimonial-container">
                 <h1 class="test-h1">What our happy clients say?</h1>
                 <div class="testimonial">
@@ -240,7 +240,7 @@
 
 
          <!-- message -->
-         <div class="main-contact-main">
+         <div class="main-contact-main" id="scroll-contact">
             <div class="main-contact">
                 
                 <div class="contact-l" >
@@ -341,10 +341,10 @@
         
         <div class="row">
         <ul>
-        <li class="lil"><a href="#">Home</a></li>
+        <li class="lil"><a href="index.html">Home</a></li>
         <li class="lil"><a href="#">About us</a></li>
-        <li class="lil"><a href="#">Projects</a></li>
-        <li class="lil"><a href="#">Contact</a></li>
+        <li class="lil"><a href="#scroll-project">Projects</a></li>
+        <li class="lil"><a href="#scroll-contact">Contact</a></li>
         </ul>
         </div>
         

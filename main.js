@@ -15,24 +15,24 @@ function showCategory(category) {
     const allProjects = document.querySelectorAll('.projects');
     const allButtons = document.querySelectorAll('.toggle-buttons button');
     
+    
     allProjects.forEach(project => {
         project.classList.remove('active');
-        if (category === 'all' || project.classList.contains(category)) {
+        if (project.classList.contains(category)) {
             project.classList.add('active');
         }
     });
 
     allButtons.forEach(button => {
-        button.classList.remove('actives'); 
+        button.classList.remove('active');
+        if (button.innerText.toLowerCase() === category) {
+            button.classList.add('active');
+            
+
+        }
     });
-
-    const activeButton = Array.from(allButtons).find(button => button.textContent.trim().toLowerCase() === category);
-    if (activeButton) {
-        activeButton.classList.add('actives');
-    }
+    
 }
-
-
 
 function showModal(projectId) {
     const modal = document.getElementById('modal');
@@ -79,6 +79,8 @@ function showModal(projectId) {
     }
     
     modal.style.display = "block";
+    document.body.classList.add("body-active");
+
 }
 
 function closeModal() {
@@ -90,7 +92,9 @@ window.onclick = function(event) {
     const modal = document.getElementById('modal');
     if (event.target == modal) {
         modal.style.display = "none";
+
     }
+    
 }
 
 
@@ -151,9 +155,36 @@ updateSlide();
 const navLinks = document.querySelector(".nav-links");
 const navLinksLi = document.querySelector(".lil");
 const navBtn = document.querySelector(".ham-menu");
+const menuLinksPhone = document.querySelector(".linkmenu");
+const menuLinksPhoneO = document.querySelector(".linkmenuO");
+const menuLinksPhoneT = document.querySelector(".linkmenuT");
+
 navBtn.addEventListener("click", ()=> {
         navLinks.classList.toggle("menu-active");
-        navLinksLi.classList.toggle("menu-activeli");
+         document.body.classList.toggle("body-active");
+
     });
+menuLinksPhone.addEventListener("click", ()=> {
+    navLinks.classList.remove("menu-active");
+    document.body.classList.remove("body-active");
+
+
+
+
+})
+menuLinksPhoneO.addEventListener("click", ()=> {
+    navLinks.classList.remove("menu-active");
+    document.body.classList.remove("body-active");
+
+
+
+})
+menuLinksPhoneT.addEventListener("click", ()=> {
+    navLinks.classList.remove("menu-active");
+    document.body.classList.remove("body-active");
+
+
+
+})
 
 
