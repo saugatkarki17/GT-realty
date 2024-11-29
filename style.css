@@ -73,6 +73,18 @@ nav {
     font-size: 13.5px;
     border-radius: 5px;
 }
+.btn-nav:hover {
+    transform: scale(1.03);
+    background-color: #dd9700;
+}
+.submit:hover {
+    transform: scale(1.03);
+    background-color: #dd9700;
+}
+.learn-more-landing:hover {
+    transform: scale(1.03);
+    background-color: #dd9700;
+}
 .btn-nav-1 {
     padding: 1rem 3.5rem;
     background-color: #ffb717;

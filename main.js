@@ -79,7 +79,6 @@ function showModal(projectId) {
     }
     
     modal.style.display = "block";
-    document.body.classList.add("body-active");
 
 }
 
@@ -117,7 +116,7 @@ const testimonials = [
         role: "Interior Designer"
     },
     {
-        image: "https://via.placeholder.com/150",
+        image: "./images/chadi.jpg",
         text: "Their attention to detail and ability to communicate throughout the project was outstanding. Our new office building is both functional and visually stunning. A job well done!",
         name: "Chady Dirany",
         role: "Business Owner"
