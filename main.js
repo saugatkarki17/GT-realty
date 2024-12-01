@@ -104,10 +104,10 @@ let currentSlide = 0;
 
 const testimonials = [
     {
-        image: "./images/f.png",
+        image: "./images/IMG_2333.jpg",
         text: "The construction team was professional, reliable, and efficient. They transformed our backyard into a beautiful outdoor living space with a custom-built pool and deck. Highly recommend their services!",
-        name: "Fady Gazel",
-        role: "Homeowner"
+        name: "Giani Amir",
+        role: "Business Owner"
     },
     {
         image: "./images/me.jpeg",
@@ -119,7 +119,7 @@ const testimonials = [
         image: "./images/chadi.jpg",
         text: "Their attention to detail and ability to communicate throughout the project was outstanding. Our new office building is both functional and visually stunning. A job well done!",
         name: "Chady Dirany",
-        role: "Business Owner"
+        role: "Home Owner"
     }
 ];
 
