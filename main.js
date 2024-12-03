@@ -116,7 +116,7 @@ const testimonials = [
         role: "Interior Designer"
     },
     {
-        image: "./images/chadi.jpg",
+        image: "./images/sadhy.png",
         text: "Their attention to detail and ability to communicate throughout the project was outstanding. Our new office building is both functional and visually stunning. A job well done!",
         name: "Chady Dirany",
         role: "Home Owner"
